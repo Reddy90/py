@@ -1,0 +1,30 @@
+//single inheritance
+#include <iostream>
+
+
+using namespace std;
+
+class student
+{
+	public :
+		int rollno = 00;
+};
+
+class name : public student 
+{
+	public :
+		char name = Principal;
+};
+
+int main()
+{
+	name s1;
+	cout << "Roll Number : " << s1.rollno << endl;
+	cout << "Name : " << s1.name << endl;
+	
+	return 0;
+}
+
+/*
+	Output :
+*/
