@@ -1,0 +1,25 @@
+//C++ program for passing array as constant pointer
+
+#include <iostream>
+
+using namespace std;
+
+int Function1(const int* list, int n)
+{
+	int i;
+	for(i = 0; i < n; i++)
+		cout<<list[i]<<"\t";
+	
+	cout<<"Trying to change values of array\t";
+	*(list[2] + 0)++;
+	cout<< *list[2];
+	
+	return 0;
+}
+
+int main()
+{
+	int const list[5]={10,20,30,40,50};
+	Function1(list, 5);
+	return 0;
+}
