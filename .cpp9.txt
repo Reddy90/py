@@ -1,0 +1,32 @@
+#include&lt;iostream&gt;
+using namespace std;
+class sample
+{
+int a;
+public:
+void get()
+{
+cin&gt;&gt;a;
+}
+void compare(sample s1)
+{
+if( a == s1.a)
+cout&lt;&lt;&quot;equal&quot;;
+else
+cout&lt;&lt; &quot;not equal&quot;;
+}
+};
+int main()
+{
+sample s,s1;
+cout&lt;&lt; &quot;Enter s: &quot;;
+s.get();
+cout &lt;&lt; &quot;Enter s1: &quot;;
+s1.get();
+
+s.compare(s1);
+}
+OUTPUT:
+Enter s : 10
+Enter s1 : 20
+not equal
